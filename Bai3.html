@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p align="center" id="tri"></p>
+<script>
+
+    let tamgiac1 = function (num) {
+        document.write('<table>');
+        for (i = 1; i <= num; i++) {
+            document.write('<tr>');
+            for (k = 1; k <= i; k++) {
+                document.write('<td>');
+                document.write('*');
+                document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>' + '<br>');
+    };
+    tamgiac1(6)
+
+    let tamgiac2 = function (num) {
+        document.write('<table>');
+        for (i = num; i >= 1; i--) {
+            document.write('<tr>');
+            for (k = 1; k <= i; k++) {
+                document.write('<td>');
+                document.write('*');
+                document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>' + '<br>');
+    };
+    tamgiac2(6)
+    let tamgiac3 = function (num) {
+        document.write('<table border = "1">');
+        for (i = 1; i <= num; i++) {
+            document.write('<tr>');
+            for (k = 1; k <= num; k++) {
+                document.write('<td>');
+                document.write('*');
+                document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>' + '<br>');
+    };
+    tamgiac3(6)
+</script>
+
+
+</body>
+</html>

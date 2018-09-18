@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let P = parseInt(prompt("Nhập số tiền bạn gửi vào ngân hàng : "));
+    let t = parseInt(prompt("Nhập thời hạn bạn định gửi tiền(năm) : "));
+    r = 7.5/100; //lai suat % nam
+    let FV = P*Math.pow(1+r,t);
+    let lai = FV - P;
+    alert("Tổng số tiền bạn nhận được sau "+t+" năm là " + FV +" VND"+ "Số lãi là : "+ lai);
+</script>
+</body>
+</html>

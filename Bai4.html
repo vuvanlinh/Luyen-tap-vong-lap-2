@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    chieudai = 20;
+    chieurong = 10;
+    document.write('<table border ="0">');
+    for (j = 1; j <= chieurong; j++) {
+        document.write('<tr>')
+        for (i = 1; i <= chieudai; i++) {
+            if (i == 1 || i == chieudai || j == chieurong || j == 1) {
+                document.write('<td>');
+                document.write('*');
+                document.write('</td>');
+            } else {
+                document.write('<td>');
+                document.write(' ');
+                document.write('</td>');
+            }
+        }
+        document.write('</tr>')
+    }
+    document.write('</table>');
+
+</script>
+</body>
+</html>
